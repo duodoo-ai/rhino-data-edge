@@ -6,7 +6,7 @@ from odoo.modules.registry import Registry
 _logger = logging.getLogger(__name__)
 
 class RtxDtuDataService(models.AbstractModel):
-    _name = 'rtx.dtu.data.service'
+    _name = 'dtu.data.service'
     _description = 'DTU Data Collection Service'
 
     def start_data_collection(self):
@@ -45,7 +45,7 @@ class RtxDtuDataService(models.AbstractModel):
             new_env = api.Environment(new_cr, self.env.uid, self.env.context)
             try:
                 # 调用Odoo模型保存数据
-                new_env['rtx.dtu.data'].create({'data': data_str})
+                new_env['dtu.data'].create({'data': data_str})
                 _logger.info(f'Received data: {data_str}')
                 # 提交事务
                 new_cr.commit()

@@ -7,10 +7,10 @@
 from odoo import api, models
 
 class DtuDataController(models.AbstractModel):
-    _name = 'rtx.dtu.data.controller'
+    _name = 'dtu.data.controller'
     _description = 'DTU Data Collection Controller'
 
     @api.model
     def start_dtu_service(self):
-        dtu_service = self.env['rtx.dtu.data.service']
+        dtu_service = self.env['dtu.data.service']
         dtu_service.start_service()

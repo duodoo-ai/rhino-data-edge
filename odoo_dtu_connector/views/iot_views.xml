@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="inherit_iot_box_view_list" model="ir.ui.view">
+        <field name="name">inherit.iot.box.view.list</field>
+        <field name="model">iot.box</field>
+        <field name="inherit_id" ref="iot.iot_box_view_list"/>
+        <field name="arch" type="xml">
+            <field name="identifier" position="after">
+                <field name="imei" optional="show"/>
+            </field>
+        </field>
+    </record>
+</odoo>

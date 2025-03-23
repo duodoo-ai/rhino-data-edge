@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="inherit_view_add_iot_box" model="ir.ui.view">
+        <field name="name">Add IoT box Inherit</field>
+        <field name="model">add.iot.box</field>
+        <field name="inherit_id" ref="iot.view_add_iot_box"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form/footer" position="before">
+                <strong>Option C. Register Dtu Box</strong><br/>
+                <group class="col-md-8">
+                    <field name="imei"/>
+                </group>
+                <group class="col-md-4">
+                    <button id="register_dtu_box" class="btn btn-primary" type="object" name="register_dtu_box" string="Register DTU"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

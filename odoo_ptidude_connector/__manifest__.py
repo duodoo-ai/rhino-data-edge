@@ -13,9 +13,9 @@
                     """,
 
     'author': "Jason Zou",
-    "website": "www.duodoo.tech",
+    "website": "-",
 
-    'category': '中国化应用/设备智慧诊断平台',
+    'category': 'Internet of Things (IoT)',
     'version': '1.0',
 
     'depends': ['base', 'mail', 'odoo_base', 'odoo_phoenix_maintenance', 'maintenance'],

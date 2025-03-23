@@ -3,11 +3,11 @@
     <data noupdate="0">
         <record id="cron_start_dtu_service" model="ir.cron">
             <field name="interval_type">days</field>
-            <field name="name">【自动任务】DTU01-DTU数据采集</field>
+            <field name="name">【自动任务】DTU01-智嵌物联DTU数据采集</field>
             <field name="priority">60</field>
             <field name="active">True</field>
             <field name="interval_number">1</field>
-            <field name="model_id" ref="rtx_dtu_connector.model_rtx_dtu_data_controller"/>
+            <field name="model_id" ref="odoo_dtu_connector.model_dtu_data_controller"/>
             <field name="state">code</field>
             <field name="code">model.start_dtu_service()</field>
         </record>

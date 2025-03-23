@@ -1,0 +1,63 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* odoo_iot
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-23 06:05+0000\n"
+"PO-Revision-Date: 2025-03-23 06:05+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: odoo_iot
+#: model_terms:ir.ui.view,arch_db:odoo_iot.inherit_view_add_iot_box
+msgid "<strong>Option C. Register Dtu Box</strong><br/>"
+msgstr "<strong>选项 C. 注册DTU设备</strong><br/>"
+
+#. module: odoo_iot
+#: model:ir.model,name:odoo_iot.model_add_iot_box
+msgid "Add IoT Box wizard"
+msgstr "添加IOT 盒子向导"
+
+#. module: odoo_iot
+#. odoo-python
+#: code:addons/odoo_iot/wizard/add_iot_box.py:0
+msgid "DTU IMEI Already Exists."
+msgstr "DTU序列号(IMEI)已存在"
+
+#. module: odoo_iot
+#: model:ir.model.fields,field_description:odoo_iot.field_add_iot_box__imei
+msgid "IMEI"
+msgstr "序列号(IMEI)"
+
+#. module: odoo_iot
+#: model:ir.model.fields,field_description:odoo_iot.field_iot_box__imei
+msgid "IMEI CODE"
+msgstr "序列号(IMEI)"
+
+#. module: odoo_iot
+#: model:ir.model.fields,field_description:odoo_iot.field_add_iot_box__identifier
+msgid "Identifier"
+msgstr "标识"
+
+#. module: odoo_iot
+#: model:ir.model,name:odoo_iot.model_iot_box
+msgid "IoT Box"
+msgstr "IoT 盒子"
+
+#. module: odoo_iot
+#. odoo-python
+#: code:addons/odoo_iot/wizard/add_iot_box.py:0
+msgid "Please enter a DTU IMEI."
+msgstr "请输入一个DTU序列号(IMEI)"
+
+#. module: odoo_iot
+#: model_terms:ir.ui.view,arch_db:odoo_iot.inherit_view_add_iot_box
+msgid "Register DTU"
+msgstr "注册(DTU)"

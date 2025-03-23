@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Rtx DTU Connector",
+    'name': "Odoo DTU Connector",
 
     'summary': """
     给Odoo与DTU平台连接，以完成数据从DTU网关采集数据到Odoo平台
@@ -13,20 +13,19 @@
                     """,
 
     'author': "Jason Zou",
-    "website": "www.duodoo.tech",
+    "website": "-",
 
-    'category': '中国化应用/智慧管道平台',
+    'category': 'Internet of Things (IoT)',
     'version': '1.0',
 
-    'depends': ['base', 'mail', 'rtx_base', 'rtx_maintenance', 'maintenance'],
+    'depends': ['base', 'mail', 'odoo_dtu'],
 
     'data': [
         'data/dtu_cron.xml',
-        # 'data/phoenix_data.xml',
-        # 'security/groups.xml',
+        'data/dtu_demo.xml',
         'security/ir.model.access.csv',
-        'views/dtu_data_views.xml',
-        'views/dtu_menu_views.xml',
+        'views/iot_views.xml',
+        'wizard/add_iot_box_views.xml',
     ],
     'demo': [
 
