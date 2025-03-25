@@ -3,7 +3,7 @@
     <data noupdate="0">
         <record id="cron_start_dtu_demo" model="ir.cron">
             <field name="interval_type">minutes</field>
-            <field name="name">【自动任务】DTU99-智嵌物联DTU数据采集(动态生成模拟数据)</field>
+            <field name="name">【智嵌物联】DTU99-智嵌物联DTU数据采集(动态生成模拟数据)</field>
             <field name="priority">60</field>
             <field name="active">True</field>
             <field name="interval_number">4</field>

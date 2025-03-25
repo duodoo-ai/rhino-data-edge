@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="inherit_dtu_data_collection_tree">
+        <field name="name">Inherit DTU Data Collection Tree</field>
+        <field name="model">dtu.data</field>
+        <field name="inherit_id" ref="odoo_dtu.dtu_data_collection_tree"/>
+        <field name="arch" type="xml">
+            <field name="company_id" position="after">
+                <field name="monthly_traffic" optional="show"/>
+                <field name="quarterly_traffic" optional="show"/>
+                <field name="yearly_traffic" optional="show"/>
+                <field name="total_traffic" optional="show"/>
+            </field>
+        </field>
+    </record>
+</odoo>
