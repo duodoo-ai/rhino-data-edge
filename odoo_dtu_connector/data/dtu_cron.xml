@@ -3,7 +3,7 @@
     <data noupdate="0">
         <record id="cron_start_dtu_service" model="ir.cron">
             <field name="interval_type">days</field>
-            <field name="name">【智嵌物联】DTU01-智嵌物联DTU数据采集</field>
+            <field name="name">ZQWL IoT DTU01- Intelligent Embedded IoT DTU Data Collection</field>
             <field name="priority">60</field>
             <field name="active">True</field>
             <field name="interval_number">1</field>
@@ -14,13 +14,25 @@
 
         <record id="cron_compute_monthly_traffic" model="ir.cron">
             <field name="interval_type">days</field>
-            <field name="name">【智嵌物联】DTU02-智嵌物联DTU数据汇总-按月</field>
+            <field name="name">ZQWL IoT DTU02- Intelligent Embedded IoT DTU Data Aggregate</field>
             <field name="priority">60</field>
             <field name="active">True</field>
             <field name="interval_number">1</field>
-            <field name="model_id" ref="odoo_dtu_connector.model_dtu_data_aggregate"/>
+            <field name="model_id" ref="odoo_dtu.model_dtu_data"/>
             <field name="state">code</field>
-            <field name="code">model.cron_compute_monthly_traffic()</field>
+            <field name="code">model.cron_compute_dtu_aggregate()</field>
+        </record>
+
+
+        <record id="cron_compute_monthly_traffic_by_project" model="ir.cron">
+            <field name="interval_type">days</field>
+            <field name="name">ZQWL IoT DTU03- Intelligent Embedded IoT DTU Data Aggregate By Project</field>
+            <field name="priority">60</field>
+            <field name="active">True</field>
+            <field name="interval_number">1</field>
+            <field name="model_id" ref="odoo_dtu.model_dtu_data"/>
+            <field name="state">code</field>
+            <field name="code">model.cron_compute_dtu_aggregate_by_project()</field>
         </record>
     </data>
 </odoo>
