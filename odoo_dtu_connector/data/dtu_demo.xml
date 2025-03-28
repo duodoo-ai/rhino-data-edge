@@ -6,7 +6,7 @@
             <field name="name">ZQWL IoT DTU99- Intelligent Embedded IoT DTU Data Collection（Demo）</field>
             <field name="priority">60</field>
             <field name="active">True</field>
-            <field name="interval_number">4</field>
+            <field name="interval_number">10</field>
             <field name="model_id" ref="odoo_dtu_connector.model_dtu_data_service"/>
             <field name="state">code</field>
             <field name="code">model.start_service_demo()</field>

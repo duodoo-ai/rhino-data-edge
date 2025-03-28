@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Odoo DTU Connector",
+    'name': "Odoo DTU Connector(RTX)",
 
     'summary': """
     给Odoo与DTU平台连接，以完成数据从DTU网关采集数据到Odoo平台
