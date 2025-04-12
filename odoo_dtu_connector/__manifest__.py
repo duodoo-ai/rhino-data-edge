@@ -22,14 +22,9 @@
 
     'data': [
         'data/dtu_cron.xml',
-        # 'data/dtu_data.xml',
+        'data/dtu_data.xml',
         'data/dtu_demo.xml',
         'security/ir.model.access.csv',
-        'views/iot_views.xml',
-        # 'views/dtu_data_aggregate_views.xml',
-        # 'views/dtu_data_views.xml',
-        'wizard/add_iot_box_views.xml',
-        # 'views/dtu_menu_views.xml',
     ],
     'demo': [
 

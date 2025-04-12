@@ -10,14 +10,31 @@ class RtxDtuDataService(models.AbstractModel):
     _description = 'DTU Data Collection Service'
 
     def start_data_collection(self):
-        # 创建一个TCP套接字
-        server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        try:
+            # 创建一个TCP套接字
+            server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        except socket.error as e:
+            _logger.error(f"Failed to create socket: {e}")
+            return
+
         # 绑定IP地址和端口
         # server_address = ('172.29.215.76', 5000)
         server_address = ('172.20.20.122', 5000)
-        server_socket.bind(server_address)
+        try:
+            server_socket.bind(server_address)
+        except socket.error as e:
+            _logger.error(f"Failed to bind socket to address {server_address}: {e}")
+            server_socket.close()
+            return
+
         # 开始监听连接
-        server_socket.listen(1)
+        try:
+            server_socket.listen(1)
+        except socket.error as e:
+            _logger.error(f"Failed to start listening on socket: {e}")
+            server_socket.close()
+            return
+
         _logger.info('Waiting for a connection...')
 
         while True:

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<odoo>
-        <menuitem
-            id="action_dtu_data_aggregate_meu"
-            name="DTU Traffic Aggregate"
-            action='action_dtu_data_aggregate'
-            parent="iot.iot_menu_root"
-            sequence="0"/>
-</odoo>

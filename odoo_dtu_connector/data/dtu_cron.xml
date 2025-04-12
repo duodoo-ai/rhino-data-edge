@@ -25,7 +25,7 @@
 
 
         <record id="cron_compute_monthly_traffic_by_project" model="ir.cron">
-            <field name="interval_type">days</field>
+            <field name="interval_type">minutes</field>
             <field name="name">ZQWL IoT DTU03- Intelligent Embedded IoT DTU Data Aggregate By Project</field>
             <field name="priority">60</field>
             <field name="active">True</field>
